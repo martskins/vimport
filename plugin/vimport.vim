@@ -295,7 +295,7 @@ function! GetPackageFromFile(filePath)
     return s:GetPackageFromDeclaration(packageDeclaration)
 endfunction
 
-function s:GetPackageFromDeclaration(packageDeclaration)
+function! s:GetPackageFromDeclaration(packageDeclaration)
     if a:packageDeclaration ==# ''
         return ''
     endif
